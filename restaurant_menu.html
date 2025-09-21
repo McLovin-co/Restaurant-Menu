@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mahir"> 
+  <title>Nocturne NYC</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header>
+    <a href="restaurant_menu.html" id="logo-title">
+      <img src="images/nocturne.jpg" alt="Nocturne NYC Logo">
+      <h1>Nocturne NYC</h1>
+    </a>
+
+    <nav id="nav-container">
+      <a href="#menu">Menu</a>
+      <a href="#order-form">Order Here</a>
+    </nav>
+  </header>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main>
+
+    <!-- ===================== INTRO ===================== -->
+    <section id="intro">
+      <article class="block left">
+        <h2 class="section-title">Welcome to Nocturne NYC</h2>
+        <p>
+          Nocturne NYC is a sophisticated dining experience in the heart of Manhattan,
+          blending contemporary American cuisine with bold, inventive flavors.
+          Step into a moody, atmospheric space where every detail is designed
+          to delight your senses.
+        </p>
+      </article>
+
+      <article class="block right">
+        <h2 class="section-title">Cuisine</h2>
+        <p>
+          Inspired by local fishermen, farmers, and purveyors, our seasonal menu
+          celebrates purity of ingredients with influences from across New York City.
+          Options include gluten-free, vegetarian, and vegan dishes.
+        </p>
+      </article>
+
+      <article class="block left">
+        <h2 class="section-title">Beverages</h2>
+        <p>
+          Our award-winning wine list and 300+ spirits complement classically inspired
+          cocktails, ensuring every sip is as memorable as the cuisine.
+        </p>
+      </article>
+    </section>
+
+    <!-- ===================== MENU ===================== -->
+    <section id="menu">
+      <h2>Menu</h2>
+
+      <div class="menu-grid">
+        <!-- Dish 1 -->
+        <article class="dish">
+          <div class="dish-content">
+            <h3>Blood Sausage</h3>
+            <p>
+              Rich, iron-dark sausage made from pork blood, fat, and spices. Served hot with caramelized onions and a touch of grainy mustard.
+              <strong><i>$18</i></strong>
+            </p>
+          </div>
+          <img src="https://i.pinimg.com/1200x/29/77/27/297727222f78c28de267d2870c836386.jpg" alt="Blood Sausage">
+        </article>
+
+        <!-- Dish 2 -->
+        <article class="dish">
+          <div class="dish-content">
+            <h3>Lamb Shanks</h3>
+            <p>
+              Slow-braised lamb shanks steeped in red wine, garlic, and herbs. Served with a rich sauce and seasonal vegetables.
+              <strong><i>$32</i></strong>
+            </p>
+          </div>
+          <img src="https://i.pinimg.com/1200x/4a/37/ed/4a37ed499e3eef0e05b88e5b0b2f4594.jpg" alt="Lamb Shanks">
+        </article>
+
+        <!-- Dish 3 -->
+        <article class="dish">
+          <div class="dish-content">
+            <h3>Squid Ink Risotto</h3>
+            <p>
+              Creamy risotto infused with squid ink for a striking black color and briny flavor. Topped with tender calamari and herbs.
+              <strong><i>$28</i></strong>
+            </p>
+          </div>
+          <img src="https://i.pinimg.com/736x/ed/b1/c2/edb1c2eea41dacd01a80e5fdb1544a00.jpg" alt="Squid Ink Risotto">
+        </article>
+
+        <!-- Dish 4 -->
+        <article class="dish">
+          <div class="dish-content">
+            <h3>Beef Tartare</h3>
+            <p>
+              Prime beef with yolk, capers, shallots, and spices, served with toasted crostini. A raw indulgence balancing delicate flavors and rich texture.
+              <strong><i>$25</i></strong>
+            </p>
+          </div>
+          <img src="https://i.pinimg.com/736x/ff/90/56/ff9056ddfa25ca64e5065c801072386c.jpg" alt="Beef Tartare">
+        </article>
+
+        <!-- Dish 5 -->
+        <article class="dish">
+          <div class="dish-content">
+            <h3>Licorice Desserts</h3>
+            <p>
+              Dark dessert blending anise with chocolate and caramel. Finished with spun sugar garnish.
+              <strong><i>$14</i></strong>
+            </p>
+          </div>
+          <img src="https://i.pinimg.com/736x/2a/2a/da/2a2ada926a8d9237d95080dfbd107ee6.jpg" alt="Licorice Desserts">
+        </article>
+
+        <!-- Dish 6 -->
+        <article class="dish">
+          <div class="dish-content">
+            <h3>Absinthe</h3>
+            <p>
+              The fabled “green fairy,” served with sugar cube and cold water. Herbal, bitter, and aromatic.
+              <strong><i>$16</i></strong>
+            </p>
+          </div>
+          <img src="https://i.pinimg.com/736x/aa/ce/90/aace90f931a148231809e07b8d037e82.jpg" alt="Absinthe">
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== ORDER FORM ===================== -->
+    <section id="order-form">
+      <h2>Place Your Order</h2>
+
+      <form class="order-form" action="thankyou.html" method="GET">
+
+        <!-- Contact Info -->
+        <div>
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" required>
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phoneNo">Phone Number:</label>
+          <input type="tel" id="phoneNo" name="phoneNo" required>
+        </div>
+
+        <!-- Dish Quantities -->
+        <div>
+          <label for="bloodSausage">Blood Sausage (portions):</label>
+          <input type="number" id="bloodSausage" name="bloodSausage" min="0" max="9" value="0">
+
+          <label for="lambShanks">Lamb Shanks (portions):</label>
+          <input type="number" id="lambShanks" name="lambShanks" min="0" max="9" value="0">
+
+          <label for="squidRisotto">Squid Ink Risotto (portions):</label>
+          <input type="number" id="squidRisotto" name="squidRisotto" min="0" max="9" value="0">
+
+          <label for="beefTartare">Beef Tartare (portions):</label>
+          <input type="number" id="beefTartare" name="beefTartare" min="0" max="9" value="0">
+
+          <label for="licoriceDessert">Licorice Dessert (portions):</label>
+          <input type="number" id="licoriceDessert" name="licoriceDessert" min="0" max="9" value="0">
+
+          <label for="absinthe">Absinthe (portions):</label>
+          <input type="number" id="absinthe" name="absinthe" min="0" max="9" value="0">
+        </div>
+
+        <!-- Add-ons -->
+        <fieldset>
+          <legend>Choose Your Sides/Add-ons:</legend>
+          <input type="checkbox" id="extraSauce" name="addons" value="Extra Sauce">
+          <label for="extraSauce">Extra Sauce</label>
+
+          <input type="checkbox" id="bread" name="addons" value="Bread Basket">
+          <label for="bread">Bread Basket</label>
+
+          <input type="checkbox" id="salad" name="addons" value="Side Salad">
+          <label for="salad">Side Salad</label>
+        </fieldset>
+
+        <!-- Special Requests -->
+        <div>
+          <label for="specialRequests">Special Requests:</label>
+          <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Allergies, preferences, etc."></textarea>
+        </div>
+
+        <!-- Form Buttons -->
+        <div>
+          <input type="reset" value="Clear">
+          <input type="submit" value="Go To Checkout">
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p>Made with love by Mahir</p>
+  </footer>
+
+</body>
+
+</html>

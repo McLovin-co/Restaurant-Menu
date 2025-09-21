@@ -1,0 +1,323 @@
+/* ===================== GLOBAL ===================== */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f1f1f1;
+  background-color: #0c2441; /* fallback */
+}
+
+/* Headings use retro font */
+h1, h2, h3 {
+  font-family: 'Bodoni Moda', serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ===================== HEADER ===================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background-color: #061729;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo + Title Container */
+#logo-title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+}
+
+/* Logo */
+#logo-title img {
+  height: 70px;
+  border-radius: 999px;
+  transition: transform 0.3s ease;
+}
+
+#logo-title img:hover {
+  transform: scale(1.05);
+}
+
+/* Title */
+#logo-title h1 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+  color: #fff;
+  transition: color 0.3s ease;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#logo-title h1:hover {
+  color: coral;
+}
+
+/* Navigation */
+#nav-container {
+  display: flex;
+  gap: 20px;
+}
+
+#nav-container a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#nav-container a:hover {
+  color: coral;
+}
+
+/* ===================== MAIN ===================== */
+main {
+  position: relative;
+  background-image: url(images/nyc.jpg);
+  background-color: #0c2441; /* fallback */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding-top: 1px;
+}
+
+/* Dark overlay */
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: -1;
+}
+
+/* ===================== INTRO ===================== */
+#intro {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.block {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.block h2 {
+  flex: 1;
+}
+
+.block p {
+  flex: 2;
+}
+
+/* Left aligned */
+.block.left {
+  flex-direction: row;
+  text-align: left;
+}
+
+/* Right aligned */
+.block.right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.section-title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0 0 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid coral;
+  display: inline-block;
+}
+
+/* ===================== MENU ===================== */
+#menu {
+  margin: 1rem;
+  padding: 0 1rem;
+  color: #fff;
+}
+
+#menu h2 {
+  text-align: center;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid coral;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Dish card styling */
+.dish {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.dish:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Dish image styling */
+.dish img {
+  width: 250px;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.dish:hover img {
+  transform: scale(1.05);
+}
+
+.dish-content {
+  flex: 1;
+}
+
+/* ===================== ORDER FORM ===================== */
+#order-form {
+  display: block;
+  padding: 2rem;
+}
+
+#order-form h2 {
+  text-align: left;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid coral;
+}
+
+.order-form {
+  background-color: rgba(6, 23, 41, 0.85);
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 0;
+}
+
+.order-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form input[type="tel"],
+.order-form input[type="number"],
+.order-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #0c2441;
+  color: #fff;
+}
+
+.order-form input[type="number"] {
+  max-width: 100px;
+}
+
+.order-form fieldset {
+  border: 1px solid coral;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.order-form legend {
+  font-weight: bold;
+}
+
+.order-form input[type="submit"],
+.order-form input[type="reset"] {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: coral;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-form input[type="submit"]:hover,
+.order-form input[type="reset"]:hover {
+  background-color: #ff7f50;
+}
+
+/* ===================== Footer ===================== */
+
+footer {
+  margin-left: 5%;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+  .block {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .dish {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dish img {
+    width: 100%;
+    height: auto;
+  }
+
+  #nav-container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
